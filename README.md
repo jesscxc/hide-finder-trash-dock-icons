@@ -1,7 +1,7 @@
 
 # Kill Finder and Trash Dock Icons
 For Mac OS X Mavericks (10.9)
-I use the [Path Finder](http://cocoatech.com/pathfinder/) app instead of the default OS X Finder, and I never use the Trash icon on the Dock either, so I wrote this script to remove those icons and leave only what I use.
+I use the [Path Finder](http://cocoatech.com/pathfinder/) app instead of the default OS X Finder, and I never use the Trash icon on the Dock either, so I wrote this AppleScript to remove those icons and leave only what I use.
 
 
 ## Overview of Script
