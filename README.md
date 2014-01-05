@@ -65,9 +65,9 @@ You can do it with a text editor like the free [Text Wrangler](http://www.barebo
 
 ## Uninstallation
 If you want to undo the entire procedure:
-1. Delete the file called 'DockMenus.plist' and then rename 'DockMenus.backup.plist' to 'DockMenus.plist'.
+1) Delete the file called 'DockMenus.plist' and then rename 'DockMenus.backup.plist' to 'DockMenus.plist'.
 
-2. In Terminal run "killall Dock".
+2) In Terminal run "killall Dock".
 
 
 ### Email Me
