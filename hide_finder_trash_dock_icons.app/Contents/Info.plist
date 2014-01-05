@@ -11,11 +11,11 @@
 	<key>CFBundleIconFile</key>
 	<string>applet</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.ScriptEditor.id.kill-finder-trash-dock-icons</string>
+	<string>com.apple.ScriptEditor.id.hide-finder-trash-dock-icons</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>kill_finder_trash_dock_icons</string>
+	<string>hide_finder_trash_dock_icons</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -40,7 +40,7 @@
 		<key>positionOfDivider</key>
 		<real>333</real>
 		<key>savedFrame</key>
-		<string>693 82 602 597 0 0 1366 746 </string>
+		<string>693 83 602 597 0 0 1366 746 </string>
 		<key>selectedTabView</key>
 		<string>result</string>
 	</dict>
