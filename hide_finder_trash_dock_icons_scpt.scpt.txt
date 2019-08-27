@@ -1,0 +1,52 @@
+
+# In Mac OS X, hides the Finder and Trash icons on the Dock.
+# Jess Cummins
+# https://github.com/jesscxc
+# (created ty13.12s)
+# (updated ty19.8s)
+# Rename this file "hide_finder_trash_dock_icons_scpt.scpt" to run as AppleScript.
+
+my toggle_indicator_lights()
+
+do shell script "killall Dock"
+
+-- Delay to wait for the icons to load after logging in before hiding them.
+delay 3
+
+tell application "System Events"
+    tell UI element "Finder" of list 1 of process "Dock"
+        perform action "AXShowMenu"
+        click the first menu item of menu 1
+        -- wait, then open Finder so it can be removed from Dock
+        delay 1
+        perform action "AXShowMenu"
+        click the last menu item of menu 1
+    end tell
+end tell
+
+tell application "System Events"
+    tell UI element "Trash" of list 1 of process "Dock"
+        perform action "AXShowMenu"
+        click the last menu item of menu 1
+    end tell
+end tell
+
+
+my toggle_indicator_lights()
+
+on toggle_indicator_lights()
+    tell application "System Preferences"
+        set current pane to pane id "com.apple.preference.dock"
+        tell application "System Events"
+            tell process "System Preferences"
+                tell first window
+                    click checkbox 3
+                end tell
+            end tell
+        end tell
+    end tell
+    quit application "System Preferences"
+end toggle_indicator_lights
+
+
+# 

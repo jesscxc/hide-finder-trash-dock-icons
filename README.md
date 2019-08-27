@@ -41,20 +41,20 @@ Basically (to quote softwater and donedamned):
 </dict>
 ```
 
-You can do it with a text editor like the free [Text Wrangler](http://www.barebones.com/products/textwrangler/download.html).
+You can do it with a text editor like the powerful and free [Sublime Text](https://www.sublimetext.com).
 
 
 (Note: OS X seems wonky here with Section 3. Random inconsistencies, it seems. Systematically keep trying different ways if it doesn't work, is all I can suggest.)
 
 3) To make it run at log in:
 
-  a. Open script in AppleScript Editor
+  a. Rename script without the ".txt" extension. Open script in AppleScript Editor.
 
   b. File > Export > File Format > Application > Save
 
   Alternatively for a & b: Download .app from Github repo
 
-  c. Run app. Accept that it's not allowed assistive access yet.
+  c. Run app. Accept that it's not allowed Assistive Access yet.
 
   d. System Preferences > Security & Privacy > (Privacy tab) > (click lock) > (uncheck then check box for script app) > (click lock)
 
@@ -71,9 +71,9 @@ If you want to undo the entire procedure:
 2) In Terminal run "killall Dock".
 
 
-### Email Me
+### Message Me
 
-If you have any issues, contact me at: <me@jessecummins.com>
+If you have any issues, message me at: <me@jessecummins.com>
 
 
 ### Thanks To
