@@ -14,10 +14,8 @@ I use the [Path Finder](http://cocoatech.com/pathfinder/) app instead of the def
 ## Installation
 First you need to add the "Remove from Dock" option to Finder and Trash.
 * Helpful instructions at:
-
 <https://discussions.apple.com/message/23591488#23591488>
 * More detailed:
-
 <http://apple.stackexchange.com/questions/30415/how-can-i-remove-the-finder-icon-from-my-dock>
 
 Basically (to quote softwater and donedamned):
@@ -71,14 +69,17 @@ If you want to undo the entire procedure:
 2) In Terminal run "killall Dock".
 
 
+## License
+
+This is dedicated to public domain (via [0BSD](https://choosealicense.com/licenses/0bsd/) license).
+
+
 ### Message Me
 
-If you have any issues, message me at: <me@jessecummins.com>
+If you have any issues, my contact info is at: [NoLiesPlease.com](http://NoLiesPlease.com/about)
 
 
 ### Thanks To
-- softwater
-- donedamned
+- [softwater](https://github.com/softwater)
+- [donedamned](https://github.com/donedamned)
 - Alexandr Mazanov
-
-
