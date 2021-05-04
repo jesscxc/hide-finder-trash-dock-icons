@@ -95,7 +95,7 @@ If you don't want to toggle the indicator lights (the little icons next to the a
 
 2.) Change at 2 places: `my toggle_indicator_lights()` to `-- .meta my toggle_indicator_lights()`. This comments out (turns off) that function.
 
-3.) Make the .app from the script using Installation Section 4d, then continue with the rest of the installation guide.
+3.) Make the .app from the script using Installation step 4d, then continue with the rest of the installation guide.
 
 
 
@@ -115,7 +115,7 @@ If you want to undo the entire procedure:
 
 2.) In [macOS Terminal](https://www.google.com/search?q=open+macos+terminal) run `killall Dock`
 
-3.) If the .app was added to run at log in (via Installation Section 4), do step 4e4 but use the minus symbol ("-") to remove the .app from startup.
+3.) If the .app was added to run at log in (via Installation step 4), do step 4e4 but use the minus symbol ("-") to remove the .app from startup.
 
 
 
