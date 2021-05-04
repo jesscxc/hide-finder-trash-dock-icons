@@ -1,37 +1,38 @@
+# .metadata (file_metadata (name hide_finder_trash_dock_icons_scpt.scpt) ((created ty13.12zm6s) (creators jesscxc) (updaters jesscxc) (updated ty19.8.29.23.57pzm4d4s ty21.5.4.7.11.13azm4d2s ty21.5.4.7.20.27azm4d2s ty21.5.4.7.36.16azm4d2s ty21.5.4.7.42.48azm4d2s ty21.5.4.7.53.24azm4d2s ty21.5.4.8.16.41azm4d2s) (filename_extension scpt) (filetype AppleScript) (repo_link https://github.com/jesscxc/hide-finder-trash-dock-icons) (creator_site NoLiesPlease.com) (creator_github_link https://github.com/jesscxc)))
 
-# In Mac OS X, hides the Finder and Trash icons on the Dock.
-# Jess Cummins
-# https://github.com/jesscxc
-# (created ty13.12s)
-# (updated ty19.8s)
-# Rename this file "hide_finder_trash_dock_icons_scpt.scpt" to run as AppleScript.
+# .meta In macOS, hides the Finder and Trash icons on the Dock.
 
+# .meta Rename this file "hide_finder_trash_dock_icons_scpt.scpt" to run as AppleScript.
+
+-- .meta optional
+-- .meta to turn off, everywhere in file change to: -- .meta my toggle_indicator_lights()
 my toggle_indicator_lights()
 
 do shell script "killall Dock"
 
--- Delay to wait for the icons to load after logging in before hiding them.
+-- .meta delay to wait for the icons to load after logging in before hiding them
 delay 3
 
 tell application "System Events"
     tell UI element "Finder" of list 1 of process "Dock"
+        -- .meta open Finder menu
         perform action "AXShowMenu"
-        click the first menu item of menu 1
-        -- wait, then open Finder so it can be removed from Dock
-        delay 1
-        perform action "AXShowMenu"
+        -- .meta click "Remove from Dock"
         click the last menu item of menu 1
     end tell
 end tell
 
 tell application "System Events"
     tell UI element "Trash" of list 1 of process "Dock"
+        -- .meta open Trash menu
         perform action "AXShowMenu"
+        -- .meta click "Remove from Dock"
         click the last menu item of menu 1
     end tell
 end tell
 
-
+-- .meta optional
+-- .meta to turn off, everywhere in file change to: -- .meta my toggle_indicator_lights()
 my toggle_indicator_lights()
 
 on toggle_indicator_lights()
@@ -49,4 +50,4 @@ on toggle_indicator_lights()
 end toggle_indicator_lights
 
 
-# 
+# .meta .
